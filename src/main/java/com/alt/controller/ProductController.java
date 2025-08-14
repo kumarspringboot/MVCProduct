@@ -10,16 +10,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class ProductController {
 
-    @GetMapping(value = "/")
+    @GetMapping(name = "/")
     public String getRegistrationPage(Model model){
     model.addAttribute("product",new ProductDTO());
     return "register";
     }
-
-    @PostMapping("/register")
-    public String registerProduct(@ModelAttribute("product") ProductDTO product, Model model) {
-        // code to save product via service
-        return "success"; // or redirect page
-    }
+//
+//    @PostMapping("/register")
+//    public String registerProduct(@ModelAttribute("product") ProductDTO product, Model model) {
+//        // code to save product via service
+//        return "success"; // or redirect page
+//    }
 
 }
