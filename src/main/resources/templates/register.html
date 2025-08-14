@@ -4,9 +4,10 @@
     <title>Register Product</title>
 </head>
 <body>
-<h1 style="color:blue" >Register</h1>
+<h1>Register</h1>
 <form th:action="@{/register}" th:object="${product}" method="post">
     <input type="text" th:field="*{name}">
+
 
     <!--    <div class="row">-->
     <!--        <div class="col-md-5">-->
